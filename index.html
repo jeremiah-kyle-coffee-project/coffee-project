@@ -3,11 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>Coffee Project</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+    <div class="banner-top">
+        <img class="logo" src="media/A&AcoffeeLogo1.png" alt="Coffee Logo">
+    </div>
         <div class="sections">
             <div class="form-container">
+                <form class="form-2">
+                    <div class="inner-form">
+                        <h3 class="form-titles"></h3>
+                        <label for="roast-selection"></label>
+                        <select class="selector" id="roast-selection">
+                            <option>All</option>
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <input class="selector" id="searchBox" type="text" placeholder="Search">
+                        <input class="selector myButton" id="submit" type="submit"/>
+                    </div>
+                </form>
+
                 <form class="form-1">
                     <h3 class="form-titles">Add your own coffee!</h3>
                     <label for="input-roast"></label>
@@ -22,45 +40,9 @@
                 </form>
                 <br>
 
-                <form class="form-2">
-                    <div class="inner-form">
-                        <h3 class="form-titles">Search for a type of coffee</h3>
-                        <label for="roast-selection"></label>
-                        <select class="selector" id="roast-selection">
-                            <option>All</option>
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <input class="selector" id="searchBox" type="text" placeholder="Search">
-                        <input class="selector myButton" id="submit" type="submit"/>
-                    </div>
-                </form>
+
             </div>
         </div>
-    <!--    <h1>Coffee!</h1>-->
-
-    <!--    <form>-->
-    <!--        <label for="roast-selection"></label>-->
-    <!--        <select id="roast-selection">-->
-    <!--            <option>light</option>-->
-    <!--            <option>medium</option>-->
-    <!--            <option>dark</option>-->
-    <!--        </select>-->
-    <!--        <input id="submit" type="submit" />-->
-    <!--    </form>-->
-
-    <!--    <table>-->
-    <!--        <thead>-->
-    <!--            <tr>-->
-    <!--                <th>ID</th>-->
-    <!--                <th>NAME</th>-->
-    <!--                <th>ROAST</th>-->
-    <!--            </tr>-->
-    <!--        </thead>-->
-    <!--        <tbody id="coffees"></tbody>-->
-    <!--    </table>-->
-
         <script src="main.js"></script>
     </body>
 </html>

@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+/**{*/
+/*    box-sizing: border-box;*/
+/*    margin : 0;*/
+/*}*/
+
 body {
     font-family: 'Acme', sans-serif;
 }
+
+.sections {
+    display:flex;
+    flex-wrap: wrap;
+   width: 100vw;
+    height: 100vh;
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*background: #6f4e37;*/
+    background-color: #6f4e37;
+    background-image: url("Media/pexels-designecologist-3458448.jpg");
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    background: #b27e56;
+    text-align: center;
+}
+

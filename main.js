@@ -1,35 +1,5 @@
 "use strict"
 
-function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
-
-    return html;
-}
-
-function renderCoffees(coffees) {
-    var html = '';
-    for(var i = coffees.length - 1; i >= 0; i--) {
-        html += renderCoffee(coffees[i]);
-    }
-    return html;
-}
-
-function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
-    coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
-            filteredCoffees.push(coffee);
-        }
-    });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
-}
-
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -47,10 +17,39 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
-var roastSelection = document.querySelector('#roast-selection');
 
-tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
+//
+// function renderCoffee(coffee) {
+//     var html = '<tr class="coffee">';
+//     html += '<td>' + coffee.id + '</td>';
+//     html += '<td>' + coffee.name + '</td>';
+//     html += '<td>' + coffee.roast + '</td>';
+//     html += '</tr>';
+//
+//     return html;
+// }
+
+// function renderCoffees(coffees) {
+//     var html = '';
+//     for(var i = coffees.length - 1; i >= 0; i--) {
+//         html += renderCoffee(coffees[i]);
+//     }
+//     return html;
+// }
+
+// function updateCoffees(e) {
+//     e.preventDefault(); // don't submit the form, we just want to update the data
+//     var selectedRoast = roastSelection.value;
+//     var filteredCoffees = [];
+//     coffees.forEach(function(coffee) {
+//         if (coffee.roast === selectedRoast) {
+//             filteredCoffees.push(coffee);
+//         }
+//     });
+//     tbody.innerHTML = renderCoffees(filteredCoffees);
+// }
+
+
+
+
