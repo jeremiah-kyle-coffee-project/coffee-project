@@ -19,6 +19,7 @@ body {
     /*background: #6f4e37;*/
     background-color: #6f4e37;
     background-image: url("Media/pexels-designecologist-3458448.jpg");
+
 }
 
 .form-container{
@@ -26,7 +27,8 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
-    background: #b27e56;
+<<<<<<< HEAD    background: #b27e56;
     text-align: center;
 }
+
 
