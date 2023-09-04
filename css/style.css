@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 *{
     box-sizing: border-box;
     margin : 0;
 }
+/*:root {*/
+/*    --main-clr-brown: #6F4E37;*/
+/*}*/
 
 body {
     background-color: #6F4E37;
+    /*background: url("media/background.jpg");*/
+    /*background-size: cover;*/
 }
 
 .nav-link {
@@ -138,6 +144,81 @@ body {
     margin: 10px 20px 0 10px;
     justify-content: flex-end;
 }
+
+/* my updates*/
+.card {
+    width:380px;
+    height: 245px;
+    border: none;
+    padding: unset;
+
+}
+.card-img-top {
+    width: 100%;
+    /*height: 100%;*/
+    max-height: 235px;
+    object-fit: cover;
+}
+.card-text {
+    font-size: 16px;
+    font-family: 'EB Garamond', cursive, serif;
+}
+
+h3 {
+    font-family: 'EB Garamond', cursive, serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+p {
+    font-family: 'EB Garamond', cursive, serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.pictures {
+    display: flex;
+    width: 25%;
+}
+
+#pic-1{
+    background-size: cover;
+    background: no-repeat;
+    height: 575px;
+    /*gap: 10px;*/
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*max-height: 900px;*/
+    /*flex-wrap: wrap;*/
+    /*width:100%;*/
+}
+
+#pic-2{
+    background-size: cover ;
+    background: no-repeat;
+    height: 575px;
+    /*display: flex;*/
+    /*max-height: 900px;*/
+    /*flex-wrap: wrap;*/
+    /*width:100%;*/
+}
+
+#pic-3{
+    background-size: cover ;
+    background: no-repeat;
+    height: 575px;
+    /*display: flex;*/
+    /*max-height: 900px;*/
+    /*flex-wrap: wrap;*/
+    /*width:100%;*/
+}
+
+/*My updates*/
+/*Updated logo and background images and updated css */
+/*Applied card structure along with css*/
+/*Updated font family and styled elements p h3 in bold*/
+/*added root var for main color*/
+/*js script updated*/
+/*Everything else was essentially the same feel free to update images or any updates you see fit*/
 
 
 
