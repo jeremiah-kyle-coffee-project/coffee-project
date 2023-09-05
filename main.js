@@ -1,8 +1,8 @@
 "use strict";
 
-// COFFEE - TABLE CONTENT //
+// TABLE CONTENT //
 
-var coffees = [
+let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
     {id: 3, name: 'Cinnamon', roast: 'light'},
@@ -19,64 +19,62 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var inputName = document.querySelector('#input-name');
-var inputRoast = document.querySelector('#input-roast');
-var CoffeeButton = document.querySelector('#input-submit');
-CoffeeButton.addEventListener('click', addCoffees);
+let inputName = document.querySelector('#input-name');
+let inputRoast = document.querySelector('#input-roast');
+let CoffeeButton = document.querySelector('#input-submit');
+CoffeeButton.addEventListener("click", addCoffees);
 
 function addCoffees () {
-    var addID = coffees.length + 1;
-    var addName = inputName.value.toString();
-    var addRoast = inputRoast.value.toString();
-    var input = {id: addID, name: addName, roast: addRoast};
+    let addID = coffees.length + 1;
+    let addName = inputName.value.toString();
+    let addRoast = inputRoast.value.toString();
+    let input = {id: addID, name: addName, roast: addRoast};
     coffees.push(input);
     coffeeList.innerHTML = renderCoffees(coffees);
 }
-
 // PUTS COFFEE DATA INTO TABLE WITHIN JS //
 function renderCoffee(coffee) {
-    var html = '<div class="product-container">';
+    let html = '<div class="product-container">';
     html += '<h1 class="product-name">' + coffee.name + '</h1>';
     html += '<p class="product-roast">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
 }
-
 // CONVERTS ABOVE TABLE DATA INTO STRINGS //
 function renderCoffees(coffees) {
-    var html = '';
-    for(var i = 0; i < coffees.length; i++) {
+    let html = "";
+    for(let i = 0; i < coffees.length; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
 }
 
-// "EXPORTS" DATA INTO TABLE OF HTML //
-var coffeeList = document.querySelector('#coffees');
+// EXPORTS" DATA INTO TABLE OF HTML //
+let coffeeList = document.querySelector('#coffees');
 coffeeList.innerHTML = renderCoffees(coffees);
 
 // SUBMIT SECTION //
-var roastSelection = document.querySelector('#roast-selection');
+let roastSelection = document.querySelector('#roast-selection');
 
-function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
+function updateCoffees(x) {
+    x.preventDefault();
+    let selectedRoast = roastSelection.value;
+    let filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast || selectedRoast === 'all') {
+        if (coffee.roast === selectedRoast || selectedRoast === "all") {
             filteredCoffees.push(coffee);
         }
     });
     coffeeList.innerHTML = renderCoffees(filteredCoffees);
 }
 
-var submitButton = document.querySelector('#submit');
-submitButton.addEventListener('click', updateCoffees);
+let submitButton = document.querySelector('#submit');
+submitButton.addEventListener("click", updateCoffees);
 
 // LIVE SEARCH FUNCTION //
 function searchCoffees() {
-    var searchRoast = searchBox.value.toUpperCase();
-    var filteredCoffees = [];
+    let searchRoast = searchBox.value.toUpperCase();
+    let filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.name.toUpperCase().includes(searchRoast)) {
             filteredCoffees.push(coffee);
@@ -85,5 +83,5 @@ function searchCoffees() {
     coffeeList.innerHTML = renderCoffees(filteredCoffees);
 }
 
-var searchBox = document.querySelector('#searchBox');
-searchBox.addEventListener('keyup', searchCoffees);
+let searchBox = document.querySelector('#searchBox');
+searchBox.addEventListener("keyup", searchCoffees);

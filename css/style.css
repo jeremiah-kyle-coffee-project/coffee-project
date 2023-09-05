@@ -28,7 +28,6 @@ body {
     font-weight: bold;
     color: #fff;
     margin: 0 0 10px 0;
-
 }
 
 .sub-titles{
@@ -126,7 +125,7 @@ body {
 
 .product-name{
     display: flex;
-    text-align: center;
+    /*text-align: center;*/
     flex-grow: 1;
     font-weight: bold;
     font-size: x-large;
@@ -145,15 +144,11 @@ body {
     justify-content: flex-end;
 }
 
-/* my updates*/
-
-
 .card {
     width:380px;
     height: 245px;
     border: none;
     padding: unset;
-
 }
 
 .card-img-top {
@@ -187,117 +182,16 @@ p {
     background-size: cover;
     background: no-repeat;
     height: 575px;
-    /*gap: 10px;*/
-    /*height: 100vh;*/
-    /*display: flex;*/
-    /*max-height: 900px;*/
-    /*flex-wrap: wrap;*/
-    /*width:100%;*/
 }
 
 #pic-2{
     background-size: cover ;
     background: no-repeat;
     height: 575px;
-    /*display: flex;*/
-    /*max-height: 900px;*/
-    /*flex-wrap: wrap;*/
-    /*width:100%;*/
 }
 
 #pic-3{
     background-size: cover ;
     background: no-repeat;
     height: 575px;
-    /*display: flex;*/
-    /*max-height: 900px;*/
-    /*flex-wrap: wrap;*/
-    /*width:100%;*/
 }
-
-
-
-/*My updates*/
-/*Updated logo and background images and updated css */
-/*Applied card structure along with css*/
-/*Updated font family and styled elements p h3 in bold*/
-/*added root var for main color*/
-/*js script updated*/
-/*Everything else was essentially the same feel free to update images or any updates you see fit*/
-
-
-
-/*.form-1, .form-2 {*/
-/*    display: flex;*/
-/*    !*flex-wrap: wrap;*!*/
-/*    !*flex-direction: row;*!*/
-/*    padding: 10px 20px;*/
-/*    text-align: center;*/
-/*}*/
-/*.banner-top{*/
-/*    display: flex;*/
-/*    position: relative;*/
-/*    justify-content: center;*/
-/*    width: 100%;*/
-/*    height: 10em;*/
-/*    !*background: url("media/coffee-bannersquare2.png")*!*/
-/*    background-size: 30em;*/
-/*    align-items: flex-end;*/
-/*}*/
-/*#flip{*/
-/*    transform: scaleY(-1);*/
-/*}*/
-/*.logo{*/
-/*    display: flex;*/
-/*    position: absolute;*/
-/*    z-index: 1;*/
-/*    width: 20em;*/
-/*    top: 30px;*/
-/*}*/
-
-/*.sections {*/
-/*    display:flex;*/
-/*    flex-wrap: wrap;*/
-/*    max-width: 81%;*/
-/*    width: 81%;*/
-/*    margin-right: auto;*/
-/*    margin-left: auto;*/
-/*    background: #6F4E37;*/
-/*}*/
-/*.pic-block{*/
-/*    display: flex;*/
-/*    width: 50%;*/
-/*}*/
-/*#pic-1{*/
-/*    background: url("media/cafe.jpeg");*/
-/*    background-size: cover;*/
-/*}*/
-/*#pic-2{*/
-/*    background: url("media/coffeepastry.jpg") no-repeat scroll 50% 0;*/
-/*    background-size: cover;*/
-/*}*/
-/*.form-container{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: wrap;*/
-/*    width: 50%;*/
-/*    background: #B27E56;*/
-/*    text-align: center;*/
-/*}*/
-
-/*h1 {*/
-
-/*    text-align: center;*/
-/*}*/
-
-
-/*.inner-form{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    width: 100%;*/
-/*    margin: 0 20px 0 20px;*/
-/*    padding: .5em;*/
-/*    justify-content: center;*/
-/*}*/
-
-
