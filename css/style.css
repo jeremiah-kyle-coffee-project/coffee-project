@@ -169,6 +169,11 @@ h3 {
     font-weight: 900;
 }
 
+h5 {
+    display: flex;
+    justify-content: center;
+}
+
 .text-box {
     border: 3px #cc9900 solid;
     background-color: rgba(111, 78, 55, 90%);
@@ -185,6 +190,10 @@ p {
     font-family: 'EB Garamond', cursive, serif;
     font-size: 18px;
     font-weight: 900;
+}
+
+a[class='text-dark']:hover {
+    cursor: pointer;
 }
 
 .pictures {
