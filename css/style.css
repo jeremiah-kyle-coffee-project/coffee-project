@@ -10,8 +10,8 @@
 
 body {
     background-color: #6F4E37;
-    /*background: url("media/background.jpg");*/
-    /*background-size: cover;*/
+    background: url("../Media/background.jpg");
+    background-size: cover;
 }
 
 .nav-link {
@@ -35,11 +35,11 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-    color: #cc9900;
+    color: #fff;
 }
 
 .selector {
-    z-index: 3;
+    /*z-index: 3;*/
     display: flex;
     /*display: inline-block;*/
     /*height: 3em;*/
@@ -138,7 +138,7 @@ body {
     display: flex;
     flex-grow: 1;
     font-weight: normal;
-    font-size: medium;
+    font-size: x-large;
     color: white;
     margin: 10px 20px 0 10px;
     justify-content: flex-end;
@@ -163,11 +163,25 @@ body {
 }
 
 h3 {
+    color: white;
     font-family: 'EB Garamond', cursive, serif;
     font-size: 25px;
     font-weight: 900;
 }
+
+.text-box {
+    border: 3px #cc9900 solid;
+    background-color: rgba(111, 78, 55, 90%);
+    border-radius: 10px;
+    box-shadow: 12px 12px 0px rgba(204, 153, 0, 0.6);
+}
+
+.mission-box {
+    box-shadow: -15px 15px 0px rgba(204, 153, 0, 0.7);
+}
+
 p {
+    color: white;
     font-family: 'EB Garamond', cursive, serif;
     font-size: 18px;
     font-weight: 900;
@@ -176,12 +190,14 @@ p {
 .pictures {
     display: flex;
     width: 25%;
+    margin-top: 100px;
 }
 
 #pic-1{
     background-size: cover;
     background: no-repeat;
     height: 575px;
+    width: 462px;
 }
 
 #pic-2{
@@ -189,6 +205,7 @@ p {
     background: no-repeat;
     height: 575px;
 }
+
 
 #pic-3{
     background-size: cover ;
