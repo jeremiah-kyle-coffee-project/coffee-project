@@ -1,6 +1,6 @@
 "use strict";
 
-// TABLE CONTENT //
+// Table Display //
 
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -32,7 +32,7 @@ function addCoffees () {
     coffees.push(input);
     coffeeList.innerHTML = renderCoffees(coffees);
 }
-// PUTS COFFEE DATA INTO TABLE WITHIN JS //
+
 function renderCoffee(coffee) {
     let html = '<div class="product-container">';
     html += '<h1 class="product-name">' + coffee.name + '</h1>';
@@ -40,7 +40,7 @@ function renderCoffee(coffee) {
     html += '</div>';
     return html;
 }
-// CONVERTS ABOVE TABLE DATA INTO STRINGS //
+
 function renderCoffees(coffees) {
     let html = "";
     for(let i = 0; i < coffees.length; i++) {
@@ -49,11 +49,11 @@ function renderCoffees(coffees) {
     return html;
 }
 
-// EXPORTS" DATA INTO TABLE OF HTML //
+
 let coffeeList = document.querySelector('#coffees');
 coffeeList.innerHTML = renderCoffees(coffees);
 
-// SUBMIT SECTION //
+// Submit Section //
 let roastSelection = document.querySelector('#roast-selection');
 
 function updateCoffees(x) {
@@ -71,7 +71,7 @@ function updateCoffees(x) {
 let submitButton = document.querySelector('#submit');
 submitButton.addEventListener("click", updateCoffees);
 
-// LIVE SEARCH FUNCTION //
+// Live Search //
 function searchCoffees() {
     let searchRoast = searchBox.value.toUpperCase();
     let filteredCoffees = [];

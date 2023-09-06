@@ -39,10 +39,7 @@ body {
 }
 
 .selector {
-    /*z-index: 3;*/
     display: flex;
-    /*display: inline-block;*/
-    /*height: 3em;*/
     font-family: 'Acme', sans-serif;;
     font-size: x-large;
     font-weight: bold;
@@ -76,7 +73,6 @@ body {
     font-size: x-large;
     line-height: 19px;
     padding: 14px;
-    /*width: 50%;*/
     border-radius: 30px;
     font-family: 'Acme', sans-serif;
     font-weight: bold;
