@@ -174,11 +174,11 @@ h5 {
     border: 3px #cc9900 solid;
     background-color: rgba(111, 78, 55, 90%);
     border-radius: 10px;
-    box-shadow: 12px 12px 0px rgba(204, 153, 0, 0.6);
+    box-shadow: 12px 12px 0 rgba(204, 153, 0, 0.6);
 }
 
 .mission-box {
-    box-shadow: -15px 15px 0px rgba(204, 153, 0, 0.7);
+    box-shadow: -15px 15px 0 rgba(204, 153, 0, 0.7);
 }
 
 p {
