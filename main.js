@@ -33,6 +33,7 @@ function addCoffees () {
     coffeeList.innerHTML = renderCoffees(coffees);
 }
 
+// Generates HTML code to display the coffee's name and roast level.
 function renderCoffee(coffee) {
     let html = '<div class="product-container">';
     html += '<h1 class="product-name">' + coffee.name + '</h1>';
@@ -41,6 +42,7 @@ function renderCoffee(coffee) {
     return html;
 }
 
+// Retrieves the values from the input fields, creates a new coffee object, pushes it to the coffees array and updates the coffee list in the HTML by calling renderCoffees.
 function renderCoffees(coffees) {
     let html = "";
     for(let i = 0; i < coffees.length; i++) {
@@ -56,6 +58,8 @@ coffeeList.innerHTML = renderCoffees(coffees);
 // Submit Section //
 let roastSelection = document.querySelector('#roast-selection');
 
+
+// Filters the coffees array based on the selected roast.
 function updateCoffees(x) {
     x.preventDefault();
     let selectedRoast = roastSelection.value;
@@ -72,6 +76,8 @@ let submitButton = document.querySelector('#submit');
 submitButton.addEventListener("click", updateCoffees);
 
 // Live Search //
+
+// Function called whenever a key is pressed in the search box. Filters the array based on the coffee names that match the search term.
 function searchCoffees() {
     let searchRoast = searchBox.value.toUpperCase();
     let filteredCoffees = [];
